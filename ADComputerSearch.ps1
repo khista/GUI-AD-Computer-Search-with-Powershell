@@ -4,7 +4,7 @@
 [void] [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
 [void] [System.Windows.Forms.Application]::EnableVisualStyles();
 
-# Puts search into variable $adpc and uses that string to filter search the current domains computer
+# Puts search into variable $adpc and uses that string to filter search the current domains computers
 function search_ADPC {  
     $adpc = $textbox_Search.Text
     $adpc = "*$adpc*"
